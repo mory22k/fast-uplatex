@@ -57,7 +57,7 @@ latexmk -C main.tex
 
 ## VS Code で使う
 
-このリポジトリには [settings.json](.vscode/settings.json) が含まれており、`LaTeX Workshop` から `latexmk` を使ってビルドする想定です。
+このリポジトリには [settings.json](.vscode/settings.json) が含まれています。この設定を用いることで `LaTeX Workshop` から `latexmk` を使ってビルドすることもできます。`LaTeX Workshop` を使用せずにターミナルから直接 `latexmk` を呼び出すこともできますし、そちらのほうが意図しないエラーが生じないのでおすすめです。
 
 現在の設定では PDF ビューアーは `external` になっています。これは、VS Code の PDF ビューアー拡張や内蔵プレビューでは、日本語が正しく表示されない場合があるためです。日本語が文字化けしたり空白になったりする場合は、VS Code 内プレビューではなく外部 PDF ビューアーで確認してください。
 
