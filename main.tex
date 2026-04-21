@@ -1,0 +1,51 @@
+\documentclass[11pt,uplatex,dvipdfmx,a4paper]{jsarticle}
+
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx,colorlinks=true,linkcolor=blue,citecolor=blue]{hyperref}
+
+\usepackage{amsmath}
+\usepackage{physics2}
+\usephysicsmodule{ab}
+
+\usepackage{authblk}
+\renewcommand\Authand{,\ } % 著者の区切りをカンマに変更
+
+\title{\textbf{シンプル高速\LaTeX{}テンプレート}}
+% 著者と所属は必要に応じてここで指定します。
+% 単一著者の場合
+% \author{山田 太郎}
+% \affil{東京科学大学理学院物理学系}
+
+\author[A]{山田 太郎}
+\author[AB]{鈴木 花子}
+\affil[A]{東京科学大学理学院物理学系}
+\affil[B]{東北大学大学院情報科学研究科}
+\date{\today}
+
+% 参考文献スタイルはここで切り替えます。
+% `unsrt` なら [1] のような番号形式、
+% `apsrev4-2` なら APS 風の形式になります。
+\bibliographystyle{apsrev4-2}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+これは日本語で論文を書くためのシンプルで高速な\LaTeX{}テンプレートです。キャッシュされたプリアンブルを使用して、コンパイルを高速化しています。レイアウトは可能な限りシンプルで、参考文献スタイルは用途に応じて切り替えられます。
+\end{abstract}
+
+\section{導入}
+
+このテンプレートは、シンプルで高速な\LaTeX{}環境を提供することを目的としています。
+キャッシュされたプリアンブルを使用することで、コンパイル時間を大幅に短縮しています。
+日本語の文書もそのまま書くことができます。
+参考文献の引用例として、論文は~\cite{einstein1905}、
+書籍は~\cite{lamport1994} のように書けます。
+
+数式は以下のように書くことが可能です。
+\begin{align}
+G &= \ab(V, E).
+\end{align}
+
+\bibliography{main}
+
+\end{document}
