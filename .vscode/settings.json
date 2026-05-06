@@ -1,5 +1,4 @@
 {
-  "latex-workshop.view.pdf.viewer": "external",
   "latex-workshop.latex.recipe.default": "latexmk",
   "latex-workshop.latex.recipes": [
     {
@@ -19,6 +18,6 @@
     }
   ],
   "latex-workshop.latex.outDir": "",
+  "latex-workshop.latex.autoBuild.run": "never",
   "latex-workshop.synctex.afterBuild.enabled": true,
-  "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false
 }
