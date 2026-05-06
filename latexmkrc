@@ -5,6 +5,10 @@ use Time::HiRes qw(time);
 my $compile_start_time = time;
 
 END {
+    my $pdf_dir = ($out_dir eq '') ? '.' : $out_dir;
+    my $pdf_path = File::Spec->rel2abs(
+        File::Spec->catfile($pdf_dir, "$root_filename.pdf")
+    );
     printf "[latexmk] elapsed time: %.3f [sec]\n", time - $compile_start_time;
     print "[latexmk] output pdf: $pdf_path\n";
 }
